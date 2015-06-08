@@ -22,10 +22,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section  id="header" class="header-container">@include('theme.header')</section>
+        <section id="header" class="header-container" data-ng-class=" {'header-fixed': admin.fixedHeader} " data-ng-controller="HeaderCtrl">@include('theme.header')</section>
 
         <div class="main-container">
-            <aside id="nav-container" class="nav-container">@include(('theme.nav'))</aside>
+
+            <aside id="nav-container" class="nav-container" data-ng-class=" {'nav-fixed': admin.fixedSidebar, 'nav-horizontal': admin.menu === 'horizontal', 'nav-vertical': admin.menu === 'vertical'}">@include(('theme.nav'))</aside>
 
             <section class="content-container animate-fade-up">@yield('content')</section>
         </div>

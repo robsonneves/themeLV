@@ -1,6 +1,6 @@
 
 <div class="nav-wrapper">
-    <ul id="nav"
+    <ul id=""
         class="nav"
         data-ng-controller="NavCtrl"
         data-slim-scroll
