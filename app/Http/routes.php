@@ -20,7 +20,9 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('theme/{name}', function($name)
+
+Route::get('theme/{name?}', function($name = null)
 {
-    return view('theme.page')->with('name',$name);
+     return view('theme.page')->with('name',$name);
+
 });

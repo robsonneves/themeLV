@@ -46,7 +46,7 @@
                                        class="toggle-task"
                                        data-ng-model="task.completed"
                                        data-ng-change="completed(task)">
-                                <label data-ng-dblclick="edit(task)">{{task.title}}</label>
+                                <label data-ng-dblclick="edit(task)">@{{task.title}}</label>
                                 <span class="glyphicon glyphicon-pencil"
                                       data-ng-click="edit(task)"></span>
                                 <span class="glyphicon glyphicon-remove"
@@ -76,7 +76,7 @@
                         </li>
                         <li class="text-center">
                             <span>
-                                <strong>{{remainingCount}}</strong>
+                                <strong>@{{remainingCount}}</strong>
                                 <span class="text-muted"
                                       data-ng-pluralize count="remainingCount"
                                       when="{one: 'item left', other: 'items left'}"></span>
@@ -85,7 +85,7 @@
                         <li class="text-right">
                             <span class="clear-completed"
                                   data-ng-click="clearCompleted()"
-                                  data-ng-show="remainingCount < tasks.length">Clear completed ({{tasks.length - remainingCount}})</span>                            
+                                  data-ng-show="remainingCount < tasks.length">Clear completed (@{{tasks.length - remainingCount}})</span>                            
                         </li>
                     </ul>
                 </footer>

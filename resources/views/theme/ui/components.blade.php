@@ -76,7 +76,7 @@
     <section class="panel panel-default">
         <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Alerts</div>
         <div class="panel-body" data-ng-controller="AlertDemoCtrl">
-            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+            <alert ng-repeat="alert in alerts" type="@{{alert.type}}" close="closeAlert($index)">@{{alert.msg}}</alert>
             <button class='btn btn-primary' ng-click="addAlert()">Add Alert</button>
         </div>
     </section>
@@ -212,13 +212,13 @@
             <div class="page-header">
                 <h3>Dynamic Progressbar</h3>
             </div>
-            <progressbar max="max" value="dynamic"><span>{{dynamic}} / {{max}}</span></progressbar>
+            <progressbar max="max" value="dynamic"><span>@{{dynamic}} / @{{max}}</span></progressbar>
 
             <p class="text-muted">No animation</p>
-            <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+            <progressbar animate="false" value="dynamic" type="success"><b>@{{dynamic}}%</b></progressbar>
 
             <p class="text-muted">Object <em>(changes type based on value)</em></p>
-            <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
+            <progressbar class="progress-striped active" value="dynamic" type="@{{type}}">@{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
             <div class="divider"></div>
             <button class="btn btn-sm btn-primary" type="button" ng-click="random()">Randomize</button>
         </div>
@@ -237,8 +237,8 @@
                     <div class="divider"></div>
                     <tabset class="ui-tab">
                         <tab heading="Static title">Static content here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quidem, officiis, et ex laudantium sed cupiditate voluptatum libero nobis sit illum voluptates beatae ab. Ad, repellendus non sequi et at.</tab>
-                        <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
-                            {{tab.content}}
+                        <tab ng-repeat="tab in tabs" heading="@{{tab.title}}" active="tab.active" disabled="tab.disabled">
+                            @{{tab.content}}
                         </tab>
                     </tabset>
 
@@ -336,8 +336,8 @@
                 <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen">
                     This content is straight in the template.
                 </accordion-group>
-                <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-                    {{group.content}}
+                <accordion-group heading="@{{group.title}}" ng-repeat="group in groups">
+                    @{{group.content}}
                 </accordion-group>
             </accordion>
         
@@ -492,10 +492,10 @@
                         </div>
                         <div class="modal-body">
                             <span ng-repeat="item in items" class="list-unstyled">
-                                <label class="ui-radio"><input name="radio1" type="radio" value="{{ item }}"  ng-checked="selected.item === item" ng-click="selected.item = item"><span>{{ item }}</span></label>
+                                <label class="ui-radio"><input name="radio1" type="radio" value="@{{ item }}"  ng-checked="selected.item === item" ng-click="selected.item = item"><span>@{{ item }}</span></label>
                             </span>
                             <br>
-                            Selected: <b>{{ selected.item }}</b>
+                            Selected: <b>@{{ selected.item }}</b>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-primary" ng-click="ok()">OK</button>
@@ -509,7 +509,7 @@
                     <button class="btn btn-danger" ng-click="open()">Open me!</button>
                     <div class="divider"></div>
                     <div class="callout callout-info" ng-show="selected">
-                        <p>Selection from a modal: {{ selected }}</p>
+                        <p>Selection from a modal: @{{ selected }}</p>
                     </div>
                 </div>
             </section>
@@ -551,7 +551,7 @@
             <br>
             <pagination class="pagination-sm" direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
             <div class="callout callout-info">
-                <p>The selected page no: {{currentPage}}</p>
+                <p>The selected page no: @{{currentPage}}</p>
             </div>
             <button class="btn btn-primary" ng-click="setPage(3)">Set current page to: 3</button>                    
             <div class="page-header">
@@ -561,7 +561,7 @@
             <br>
             <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
             <div class="callout callout-info">
-                <p>Page: {{bigCurrentPage}} / {{numPages}}</p>
+                <p>Page: @{{bigCurrentPage}} / @{{numPages}}</p>
             </div>                    
         </div>
     </section>

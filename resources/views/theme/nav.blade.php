@@ -8,7 +8,7 @@
         data-highlight-active>
         <li><a href="/theme/ui.dashboard"> <i class="fa fa-dashboard"></i><span>Dashboard</span> </a></li>
         <li>
-            <a href="#/ui"><i class="fa fa-magic"></i><span data-i18n="UI Kit"></span></a>
+            <a href="#/ui"><i class="fa fa-magic"></i><span>UI Kit</span></a>
             <ul>
                 <li><a href="/theme/ui.buttons"><i class="fa fa-caret-right"></i><span>Buttons</span></a></li>
                 <li><a href="/theme/ui.typography"><i class="fa fa-caret-right"></i><span data-i18n="Typography"></span></a></li>

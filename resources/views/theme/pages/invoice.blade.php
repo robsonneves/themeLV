@@ -6,7 +6,7 @@
             <div class="invoice-inner">
                 <div class="row">
                     <div class="col-xs-6">
-                        <p class="size-h2">{{main.brand}}</p>
+                        <p class="size-h2">@{{main.brand}}</p>
                         <p class="text-muted">Responsive Admin App</p>
                     </div>
                     <div class="col-xs-6 text-right">
@@ -19,7 +19,7 @@
 
                 <div class="row">
                     <div class="col-xs-6">
-                        {{main.name}} <br>
+                        @{{main.name}} <br>
                         1234 Durfee Ave, El Monte CA, 91732 <br>
                         (626) 123-4567 <br>
                         mail@site.com

@@ -258,7 +258,7 @@
         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Typeahead (Autocomplete)</strong></div>
         <div class="panel-body" data-ng-controller="TypeaheadCtrl">
             <div class="callout callout-info">
-                <p>State is: {{selected}}</p>
+                <p>State is: @{{selected}}</p>
             </div> 
             <div class="row">
                 <div class="col-sm-2">
@@ -284,7 +284,7 @@
                         <timepicker class="ui-timepicker" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
                     </div>                    
                     <div class="callout callout-info">
-                        <p>Time is: {{mytime | date:'shortTime' }}</p>
+                        <p>Time is: @{{mytime | date:'shortTime' }}</p>
                     </div>
                 </div>
 
@@ -323,7 +323,7 @@
                     <div class="input-group ui-datepicker">
                         <input type="text" 
                                class="form-control"
-                               datepicker-popup="{{format}}"
+                               datepicker-popup="@{{format}}"
                                ng-model="dt"
                                is-open="opened"
                                min="minDate"
@@ -335,7 +335,7 @@
                         <span class="input-group-addon" ng-click="open($event)"><i class="fa fa-calendar"></i></span>
                     </div>
                     <div class="callout callout-info">
-                        <p>Date is: {{dt | date:'fullDate'}}</p>
+                        <p>Date is: @{{dt | date:'fullDate'}}</p>
                     </div>
                 </div>
 
@@ -379,10 +379,10 @@
                             on-leave="overStar = null"
                             state-on="'fa fa-star'"
                             state-off="'fa fa-star-o'"></rating>
-                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">@{{percent}}%</span>
 
                     <div class="callout callout-info">
-                        <p>Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></p>
+                        <p>Rate: <b>@{{rate}}</b> - Readonly is: <i>@{{isReadonly}}</i> - Hovering over: <b>@{{overStar || "none"}}</b></p>
                     </div>
 
                     <button class="btn btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>

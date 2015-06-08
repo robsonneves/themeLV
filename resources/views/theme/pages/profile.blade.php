@@ -136,7 +136,7 @@
                                 <li>
                                     <span class="icon glyphicon glyphicon-user"></span>
                                     <label>User name</label>
-                                    {{main.name}}
+                                    @{{main.name}}
                                 </li>
                                 <li>
                                     <span class="icon glyphicon glyphicon-envelope"></span>

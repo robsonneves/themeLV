@@ -21,7 +21,7 @@
             <section class="panel panel-default">
                 <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Serialised Output</strong></div>
                 <div class="panel-body">
-                    <pre class="text-muted">{{list}}</pre>
+                    <pre class="text-muted">@{{list}}</pre>
                 </div>
             </section> 
 
@@ -31,7 +31,7 @@
 
     <script type="text/ng-template" id="items_renderer.html">
         <div class="angular-ui-tree-handle">
-            <span>{{item.items}}</span>
+            <span>@{{item.items}}</span>
         </div>
     </script>
 
@@ -40,7 +40,7 @@
             <span data-ng-show="item.items.length > 0"><a class="angular-ui-tree-icon" data-nodrag ng-click="toggle(this)">
                 <span class="angular-ui-tree-icon-collapse" ng-class="{'collapsed': collapsed, 'uncollapsed': !collapsed}"></span>
             </a></span>
-            {{item.title}}
+            @{{item.title}}
             <a class="pull-right angular-ui-tree-icon angular-ui-tree-icon-action" data-nodrag ng-click="remove(this)"><span class="fa fa-times"></span></a>
             <a class="pull-right angular-ui-tree-icon angular-ui-tree-icon-action" data-nodrag ng-click="newSubItem(this)"><span class="fa fa-plus"></span></a>
         </div>

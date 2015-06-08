@@ -2,7 +2,7 @@
 
     <div class="signin-header">
         <section class="logo text-center">
-            <a href="#/">{{main.brand}}</a>
+            <a href="#/"></a>
         </section>
     </div>
 

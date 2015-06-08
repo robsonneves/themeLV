@@ -10,11 +10,11 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
         <!-- Needs images, font... therefore can not be part of main.css -->
 
-        <link rel="stylesheet" href="{{asset('fonts/font-awesome/css/font-awesome.min.css')}}">
-        <link rel="stylesheet" href="{{asset('fonts/weather-icons/css/weather-icons.min.css')}}">
+        <link rel="stylesheet" href="{{asset('theme/fonts/font-awesome/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('theme/fonts/weather-icons/css/weather-icons.min.css')}}">
         <!-- end Needs images -->
 
-        <link rel="stylesheet" href="{{asset('css/main.css')}}">
+        <link rel="stylesheet" href="{{asset('theme/css/main.css')}}">
 
     </head>
     <body data-ng-app="app" id="app" class="app" data-custom-page data-off-canvas-nav data-ng-controller="AppCtrl" data-ng-class=" {'layout-boxed': admin.layout === 'boxed' } ">
@@ -31,9 +31,9 @@
             <section class="content-container animate-fade-up">@yield('content')</section>
         </div>
 
-        <script src="{{asset('angular/vendor.js')}}"></script>
-        <script src="{{asset('angular/ui.js')}}"></script>
-        <script src="{{asset('angular/app.js')}}"></script>
+        <script src="{{asset('theme/angular/vendor.js')}}"></script>
+        <script src="{{asset('theme/angular/ui.js')}}"></script>
+        <script src="{{asset('theme/angular/app.js')}}"></script>
 
     </body>
 </html>

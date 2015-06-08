@@ -5,6 +5,6 @@
     @if($name)
         @include('theme.'.$name)
     @else
-        No Page
+        @include('theme.ui.dashboard')
     @endif
 @stop

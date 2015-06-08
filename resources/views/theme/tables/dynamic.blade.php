@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-sm-3 col-xs-6 filter-result-info">
                     <span>
-                        Showing {{filteredStores.length}}/{{stores.length}} entries
+                        Showing @{{filteredStores.length}}/@{{stores.length}} entries
                     </span>              
                 </div>
             </div>
@@ -66,10 +66,10 @@
             </thead>
             <tbody>
                 <tr data-ng-repeat="store in currentPageStores">
-                    <td>{{store.name}}</td>
-                    <td>{{store.price}}</td>
-                    <td>{{store.sales}}</td>
-                    <td>{{store.rating}}</td>
+                    <td>@{{store.name}}</td>
+                    <td>@{{store.price}}</td>
+                    <td>@{{store.sales}}</td>
+                    <td>@{{store.rating}}</td>
                 </tr>
             </tbody>
         </table>

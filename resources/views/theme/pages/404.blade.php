@@ -17,6 +17,6 @@
         </div>
     </div>
     <div class="footer text-center">
-        Copyright 2014 {{main.brand}} Admin
+        Copyright 2014 @{{main.brand}} Admin
     </div>
 </div>

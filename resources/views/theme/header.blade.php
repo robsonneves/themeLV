@@ -2,7 +2,7 @@
 
     <!-- Logo -->
     <div class="logo">
-        <a href="#/">
+        <a href="/theme/ui.dashboard">
             <!-- <span class="logo-icon glyphicon glyphicon-fire"></span> -->
             <span>LOGO</span>
         </a>
@@ -56,25 +56,25 @@
                 </a>
                 <ul class="dropdown-menu with-arrow">
                     <li>
-                        <a href="#/pages/profile">
+                        <a href="/theme/pages.profile">
                             <i class="fa fa-user"></i>
                             <span data-i18n="My Profile"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#/tasks/tasks">
+                        <a href="/theme/tasks.tasks">
                             <i class="fa fa-check"></i>
                             <span data-i18n="My Tasks"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#/pages/lock-screen">
+                        <a href="/theme/pages.lock-screen">
                             <i class="fa fa-lock"></i>
                             <span data-i18n="Lock"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#/pages/signin">
+                        <a href="/theme/pages.signin">
                             <i class="fa fa-sign-out"></i>
                             <span data-i18n="Log Out"></span>
                         </a>
