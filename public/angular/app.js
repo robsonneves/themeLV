@@ -1731,12 +1731,21 @@
 }.call(this), function () {
     "use strict";
     angular.module("app", ["ngRoute", "ngAnimate", "ui.bootstrap", "easypiechart", "mgo-angular-wizard", "textAngular", "ui.tree", "ngMap", "ngTagsInput", "duScroll", "app.controllers", "app.directives", "app.localization", "app.nav", "app.ui.ctrls", "app.ui.directives", "app.ui.services", "app.ui.map", "app.form.validation", "app.ui.form.ctrls", "app.ui.form.directives", "app.tables", "app.task", "app.chart.ctrls", "app.chart.directives", "app.page.ctrls"]).config(["$routeProvider", function ($routeProvider) {
+
+        /*
         var routes, setRoutes;
         return routes = ["dashboard", "ui/typography", "ui/buttons", "ui/icons", "ui/grids", "ui/widgets", "ui/components", "ui/timeline", "ui/nested-lists", "ui/pricing-tables", "ui/maps", "tables/static", "tables/dynamic", "tables/responsive", "forms/elements", "forms/layouts", "forms/validation", "forms/wizard", "charts/charts", "charts/flot", "charts/morris", "pages/404", "pages/500", "pages/blank", "pages/forgot-password", "pages/invoice", "pages/lock-screen", "pages/profile", "pages/signin", "pages/signup", "mail/compose", "mail/inbox", "mail/single", "tasks/tasks"], setRoutes = function (route) {
+
             var config, url;
+
             return url = "/" + route, config = {
+
                 templateUrl: "views/" + route + ".html"
-            }, $routeProvider.when(url, config), $routeProvider
+            },
+
+                $routeProvider.when(url, config), $routeProvider
+
+
         }, routes.forEach(function (route) {
             return setRoutes(route)
         }), $routeProvider.when("/", {
@@ -1746,6 +1755,9 @@
         }).otherwise({
             redirectTo: "/404"
         })
+        */
+
+
     }])
 }.call(this), function () {
     "use strict";
@@ -1987,7 +1999,7 @@
             name: "Lisa Doe"
         }, $scope.admin = {
             layout: "wide",
-            menu: "vertical",
+            menu: "horizontal",
             fixedHeader: !0,
             fixedSidebar: !0
         }, $scope.$watch("admin", function (newVal, oldVal) {

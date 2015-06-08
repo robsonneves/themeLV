@@ -1,25 +1,25 @@
 
 <div class="nav-wrapper">
-    <ul id=""
+    <ul id="nav"
         class="nav"
         data-ng-controller="NavCtrl"
         data-slim-scroll
         data-collapse-nav
         data-highlight-active>
-        <li><a href=""> <i class="fa fa-dashboard"></i><span>Dashboard</span> </a></li>
+        <li><a href="/theme/dashboard"> <i class="fa fa-dashboard"></i><span>Dashboard</span> </a></li>
         <li>
             <a href="#/ui"><i class="fa fa-magic"></i><span data-i18n="UI Kit"></span></a>
             <ul>
-                <li><a href="{{route('theme.buttons')}}"><i class="fa fa-caret-right"></i><span>Buttons</span></a></li>
-                <li><a href="#/ui/typography"><i class="fa fa-caret-right"></i><span data-i18n="Typography"></span></a></li>
-                <li><a href="#/ui/widgets"><i class="fa fa-caret-right"></i><span data-i18n="Widgets"></span> <span class="badge badge-success">13</span></a></li>
-                <li><a href="#/ui/grids"><i class="fa fa-caret-right"></i><span data-i18n="Grids"></span></a></li>
-                <li><a href="#/ui/icons"><i class="fa fa-caret-right"></i><span data-i18n="Icons"></span></a></li>
-                <li><a href="#/ui/components"><i class="fa fa-caret-right"></i><span data-i18n="Components"></span> <span class="badge badge-danger">18</span></a></li>
-                <li><a href="#/ui/timeline"><i class="fa fa-caret-right"></i><span data-i18n="Timeline"></span></a></li>
-                <li><a href="#/ui/nested-lists"><i class="fa fa-caret-right"></i><span data-i18n="Nested Lists"></span></a></li>
-                <li><a href="#/ui/pricing-tables"><i class="fa fa-caret-right"></i><span data-i18n="Pricing Tables"></span></a></li>
-                <li><a href="#/ui/maps"><i class="fa fa-caret-right"></i><span data-i18n="Maps"></span>  <span class="badge badge-warning">2</span></a></li>
+                <li><a href="/theme/ui.buttons"><i class="fa fa-caret-right"></i><span>Buttons</span></a></li>
+                <li><a href="/theme/typography"><i class="fa fa-caret-right"></i><span data-i18n="Typography"></span></a></li>
+                <li><a href="/theme/widgets"><i class="fa fa-caret-right"></i><span data-i18n="Widgets"></span> <span class="badge badge-success">13</span></a></li>
+                <li><a href="/theme/grids"><i class="fa fa-caret-right"></i><span data-i18n="Grids"></span></a></li>
+                <li><a href="/theme/icons"><i class="fa fa-caret-right"></i><span data-i18n="Icons"></span></a></li>
+                <li><a href="/theme/components"><i class="fa fa-caret-right"></i><span data-i18n="Components"></span> <span class="badge badge-danger">18</span></a></li>
+                <li><a href="/theme/timeline"><i class="fa fa-caret-right"></i><span data-i18n="Timeline"></span></a></li>
+                <li><a href="/theme/nested-lists"><i class="fa fa-caret-right"></i><span data-i18n="Nested Lists"></span></a></li>
+                <li><a href="/theme/pricing-tables"><i class="fa fa-caret-right"></i><span data-i18n="Pricing Tables"></span></a></li>
+                <li><a href="/theme/maps"><i class="fa fa-caret-right"></i><span data-i18n="Maps"></span>  <span class="badge badge-warning">2</span></a></li>
             </ul>
         </li>
         <li>

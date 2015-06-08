@@ -20,9 +20,7 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-
-Route::group(['prefix' => 'theme'] , function()
+Route::get('theme/{name}', function($name)
 {
-    Route::get('', ['as' => 'theme.index',   'uses' => 'Theme\ThemeController@index']    );
-    Route::get('buttons', ['as' => 'theme.buttons', 'uses' => 'Theme\ThemeController@buttons']    );
+    return view('theme.page')->with('name',$name);
 });
