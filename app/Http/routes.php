@@ -23,5 +23,6 @@ Route::controllers([
 
 Route::group(['prefix' => 'theme'] , function()
 {
-    Route::get('', ['as' => 'theme.index',  'uses' => 'Theme\ThemeController@index']    );
+    Route::get('', ['as' => 'theme.index',   'uses' => 'Theme\ThemeController@index']    );
+    Route::get('buttons', ['as' => 'theme.buttons', 'uses' => 'Theme\ThemeController@buttons']    );
 });

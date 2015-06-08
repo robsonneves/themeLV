@@ -6,11 +6,11 @@
         data-slim-scroll
         data-collapse-nav
         data-highlight-active>
-        <li><a href="#/dashboard"> <i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+        <li><a href=""> <i class="fa fa-dashboard"></i><span>Dashboard</span> </a></li>
         <li>
-            <a href="#/ui"><i class="fa fa-magic"></i><span>UI Kit</span></a>
+            <a href="#/ui"><i class="fa fa-magic"></i><span data-i18n="UI Kit"></span></a>
             <ul>
-                <li><a href="#/ui/buttons"><i class="fa fa-caret-right"></i><span data-i18n="Buttons"></span></a></li>
+                <li><a href="{{route('theme.buttons')}}"><i class="fa fa-caret-right"></i><span>Buttons</span></a></li>
                 <li><a href="#/ui/typography"><i class="fa fa-caret-right"></i><span data-i18n="Typography"></span></a></li>
                 <li><a href="#/ui/widgets"><i class="fa fa-caret-right"></i><span data-i18n="Widgets"></span> <span class="badge badge-success">13</span></a></li>
                 <li><a href="#/ui/grids"><i class="fa fa-caret-right"></i><span data-i18n="Grids"></span></a></li>

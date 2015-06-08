@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
 
     </head>
-    <body id="app" class="app">
+    <body data-ng-app="app" id="app" class="app" data-custom-page data-off-canvas-nav data-ng-controller="AppCtrl" data-ng-class=" {'layout-boxed': admin.layout === 'boxed' } ">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -27,11 +27,12 @@
         <div class="main-container">
             <aside id="nav-container" class="nav-container">@include(('theme.nav'))</aside>
 
-            <section class="content-container animate-fade-up">@include('theme.dashboard')</section>
+            <section class="content-container animate-fade-up">@yield('content')</section>
         </div>
 
-       <script>
+        <script src="{{asset('angular/vendor.js')}}"></script>
+        <script src="{{asset('angular/ui.js')}}"></script>
+        <script src="{{asset('angular/app.js')}}"></script>
 
-</script>
     </body>
 </html>

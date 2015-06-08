@@ -10,4 +10,9 @@ class ThemeController extends Controller {
         return view('theme.index');
     }
 
+    public function buttons ()
+    {
+        return view('theme.ui.buttons');
+    }
+
 }
