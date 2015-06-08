@@ -7,7 +7,7 @@
             <div class="panel panel-profile">
                 <div class="panel-heading text-center bg-info">
                     <img alt="" src="images/g1.jpg" class="img-circle img80_80">
-                    <h3>{{main.name}}</h3>
+                    <h3></h3>
                     <p>Project Manager</p>                    
                 </div>
                 <div class="list-justified-container">

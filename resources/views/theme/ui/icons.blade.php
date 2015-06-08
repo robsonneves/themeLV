@@ -3,14 +3,14 @@
     <div class="panel panel-info">
         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Font Awesome 4.3.x</strong></div>
         <div class="panel-body">
-            <p>519 font icons. For complete lists, <a href="http://fontawesome.io/icons/" target="_blank">please go here</a></p>
+            <p>519 font icons. For complete lists, <a href="http://fontawesome.io/icons/icons.blade.php" target="_blank">please go here</a></p>
         </div>
     </div>
 
     <div class="panel panel-info">
         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Weather Icons 1.3.x</strong></div>
         <div class="panel-body">
-            <p>189 weather icons. For complete lists, <a href="http://erikflowers.github.io/weather-icons/" target="_blank">please go here</a></p>
+            <p>189 weather icons. For complete lists, <a href="http://erikflowers.github.io/weather-icons/icons.blade.php" target="_blank">please go here</a></p>
         </div>
     </div>
 
