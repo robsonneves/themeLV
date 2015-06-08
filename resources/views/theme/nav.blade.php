@@ -40,9 +40,9 @@
         <li>
             <a href="#/table"><i class="fa fa-table"></i><span data-i18n="Tables"></span></a>
             <ul>
-                <li><a href="#/tables/static"><i class="fa fa-caret-right"></i><span data-i18n="Static Tables"></span></a></li>
-                <li><a href="#/tables/responsive"><i class="fa fa-caret-right"></i><span data-i18n="Responsive Tables"></span></a></li>
-                <li><a href="#/tables/dynamic"><i class="fa fa-caret-right"></i><span data-i18n="Dynamic Tables"></span></a></li>
+                <li><a href="/theme/tables.static"><i class="fa fa-caret-right"></i><span data-i18n="Static Tables"></span></a></li>
+                <li><a href="/theme/tables.responsive"><i class="fa fa-caret-right"></i><span data-i18n="Responsive Tables"></span></a></li>
+                <li><a href="/theme/tables.dynamic"><i class="fa fa-caret-right"></i><span data-i18n="Dynamic Tables"></span></a></li>
             </ul>
         </li>
         <li>
